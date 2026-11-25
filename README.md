@@ -4,6 +4,8 @@ This package provides an executable `psql-retry` that invokes psql
 with `PSQL_ARGS` and re-tries when it sees a psql error `"canceling statement due to lock timeout"` until it succeeds
 or it does 500 attempts. `PSQL_ARGS` can be passed as an environment variable or as an argument to `psql-retry`.
 
+psql-retry is one of the tools Kronor uses to keep a PostgreSQL schema in sqitch, with [sqiff](https://github.com/kronor-io/sqiff), [sqint](https://github.com/kronor-io/sqint) and [create-migration](https://github.com/kronor-io/sqitch-with-templates). [sqitchcraft](https://kronor-io.github.io/sqitchcraft/) shows how they fit together: the repository layout they assume, one change from an edited file to a deploy, and instructions for coding agents.
+
 ### Usage
 
 ```bash

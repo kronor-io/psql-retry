@@ -32,7 +32,7 @@ library
         streamly-core >= 0.2.3 && < 0.3,
         string-interpolate >= 0.3.4 && < 0.4,
         retry >= 0.9 && < 0.10,
-        unix >= 2.7 && < 2.8
+        unix >= 2.7 && < 2.9
     hs-source-dirs:   src
     default-language: Haskell2010
 
@@ -42,7 +42,7 @@ executable psql-retry
     -- other-modules:
     -- other-extensions:
     build-depends:
-        base ^>=4.19.1.0,
+        base >=4.19.1.0 && <4.22,
         psql-retry
 
     hs-source-dirs:   app
@@ -57,5 +57,5 @@ test-suite psql-retry-test
     hs-source-dirs:   test
     main-is:          Main.hs
     build-depends:
-        base ^>=4.19.1.0,
+        base >=4.19.1.0 && <4.22,
         psql-retry

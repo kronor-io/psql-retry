@@ -1,5 +1,8 @@
 packages: .
 
+allow-newer:
+  streamly-process:unix
+
 constraints:
   streamly-process ==0.3.1.0.0.0.0.1
 
